@@ -16,6 +16,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    await message.channel.send("hi!")
+
     if message.author == client.user:
         return
 
