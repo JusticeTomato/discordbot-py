@@ -17,10 +17,10 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author == client.user:
-        await message.channel.send(client.user)
+        await message.channel.send(message.author == client.user)
         return
     else:
-        await message.channel.send(message.author)
+        await message.channel.send('not same')
 
     if message.content == '!call':
         await message.channel.send("callback!")
