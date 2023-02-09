@@ -12,11 +12,10 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'Logged in as {client.user}. v.1228')
+    print(f'Logged in as {client.user}.')
 
 @client.event
 async def on_message(message):
-    await message.channel.send("hi!")
     if message.author == client.user:
         return
 
