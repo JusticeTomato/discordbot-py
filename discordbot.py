@@ -19,7 +19,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == f'{PREFIX}call':
+    if message.content == '!call':
         await message.channel.send("callback!")
 
     if message.content.startswith(f'{PREFIX}hello'):
