@@ -21,6 +21,7 @@ async def on_message(message):
         return
     else:
         await message.channel.send('not same')
+        await message.channel.send('%s vs. %s' %(message.author, client.user))
 
     if message.content == '!call':
         await message.channel.send("callback!")
