@@ -13,14 +13,14 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'Logged in as {client.user}. 1029')
+    print(f'Logged in as {client.user}. 1032')
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-    else:
-        await message.channel.send('callback: ' + message.content)
+    # else:
+    #     await message.channel.send('callback: ' + message.content)
 
     if message.content == '!call':
         await message.channel.send("callback!")
