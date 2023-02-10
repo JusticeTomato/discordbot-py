@@ -8,7 +8,7 @@ load_dotenv()
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
 
-client = discord.Client(intents=discord.Intents.all())
+client = discord.Client()
 
 @client.event
 async def on_ready():
