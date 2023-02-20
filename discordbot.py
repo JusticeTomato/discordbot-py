@@ -21,7 +21,7 @@ client = discord.Client(intents=intents) # client 생성. 디스코드와 연결
 # 콜백 스타일: 콜백은 기본적으로는 무엇인가 일어났을때 호출되는 기능
 @client.event # 데코레이터 - 이벤트 등록
 async def on_ready(): # 봇이 로깅을 끝내고 여러가지를 준비한 뒤 호출
-    print(f'We have logged in as {client.user}')
+    print(f'We have logged in as {client.user}1111')
 
 @client.event
 async def on_message(message): # 봇이 메시지를 받았을 때 호출됩니다
