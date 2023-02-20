@@ -1,4 +1,5 @@
 import discord
+print(discord.__version__)
 import os
 from dotenv import load_dotenv
 load_dotenv()
