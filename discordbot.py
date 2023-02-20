@@ -6,7 +6,7 @@ from discord.ext import commands
 from discord.utils import get
 
 
-TOKEN = 'MTA3MjgwOTA3NDkwMDYwMjk4MA.GtmELJ.4FjKDSERpmfm2zGvb9WX3hfstKsCtMa_9zwl5k'
+TOKEN = 
 
 intents = discord.Intents.default()
 intents.message_content = True
