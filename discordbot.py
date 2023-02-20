@@ -1,12 +1,17 @@
-import random
 import discord
+import os
+import random
+load_dotenv()
+
+import random
+from dotenv import load_dotenv
 from discord.ui import Button, View
 from discord import ButtonStyle
 from discord.ext import commands
 from discord.utils import get
 
 
-TOKEN = 
+TOKEN = os.environ['TOKEN']
 
 intents = discord.Intents.default()
 intents.message_content = True
